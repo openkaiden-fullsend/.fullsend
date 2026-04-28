@@ -1,0 +1,35 @@
+# fullsend organization configuration
+# https://github.com/fullsend-ai/fullsend
+#
+# This file is managed by fullsend. Manual edits may be overwritten.
+version: "1"
+dispatch:
+    platform: github-actions
+inference:
+    provider: vertex
+defaults:
+    roles:
+        - fullsend
+        - triage
+        - coder
+        - review
+    max_implementation_retries: 2
+    auto_merge: false
+agents:
+    - role: fullsend
+      name: openkaiden-fullsend-fullsend
+      slug: openkaiden-fullsend-fullsend
+    - role: triage
+      name: openkaiden-fullsend-triage
+      slug: openkaiden-fullsend-triage
+    - role: coder
+      name: openkaiden-fullsend-coder
+      slug: openkaiden-fullsend-coder
+    - role: review
+      name: openkaiden-fullsend-review
+      slug: openkaiden-fullsend-review
+repos:
+    kaiden:
+        enabled: true
+    kdn:
+        enabled: false
