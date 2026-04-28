@@ -29,7 +29,9 @@ agents:
       name: openkaiden-fullsend-review
       slug: openkaiden-fullsend-review
 repos:
-    kaiden:
-        enabled: true
-    kdn:
+    .fullsend:
         enabled: false
+    kaiden:
+        enabled: false
+    kdn:
+        enabled: true
