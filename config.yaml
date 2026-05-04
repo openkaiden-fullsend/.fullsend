@@ -34,4 +34,4 @@ repos:
     kaiden:
         enabled: true
     kdn:
-        enabled: true
+        enabled: false
